@@ -221,7 +221,7 @@ public class TileEntityOven extends TileEntityFurniture implements ISidedInvento
 				getStackInSlot(itemNum + 4).grow(data.getOutput().copy().getCount());
 			}
 
-			if (getStackInSlot(itemNum).getItem().hasContainerItem())
+			if (getStackInSlot(itemNum).getItem().hasContainerItem(getStackInSlot(itemNum)))
 			{
 				setInventorySlotContents(itemNum, new ItemStack(getStackInSlot(itemNum).getItem().getContainerItem()));
 			}

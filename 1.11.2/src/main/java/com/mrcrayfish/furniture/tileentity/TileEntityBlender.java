@@ -176,7 +176,7 @@ public class TileEntityBlender extends TileEntity implements ITickable, ISimpleI
 		{
 			if (ingredients[i] != null)
 			{
-				if (ingredients[i].getItem().hasContainerItem())
+				if (ingredients[i].getItem().hasContainerItem(ingredients[i]))
 				{
 					if (!world.isRemote)
 					{

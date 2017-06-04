@@ -108,7 +108,7 @@ public class TileEntityDishwasher extends TileEntityFurniture implements ISidedI
 			RecipeData data = RecipeAPI.getDishwasherRecipeFromInput(inventory.get(i));
 			if (data == null)
 			{
-				return false;
+				continue;
 			}
 			else
 			{
@@ -116,6 +116,7 @@ public class TileEntityDishwasher extends TileEntityFurniture implements ISidedI
 			}
 		}
 		return flag;
+		
 	}
 
 	public boolean isWashing()
@@ -159,22 +160,21 @@ public class TileEntityDishwasher extends TileEntityFurniture implements ISidedI
 					}
 				}
 			}
-
 			timeRemaining--;
 			if (timeRemaining <= 0)
 			{
-				if (inventory.get(4) != null)
+				if (inventory.get(6) != null)
 				{
-					if (inventory.get(4).getItem() == FurnitureItems.itemSoapyWater)
+					if (inventory.get(6).getItem() == FurnitureItems.itemSoapyWater)
 					{
 						this.superMode = false;
-						inventory.set(4, new ItemStack(FurnitureItems.itemSoapyWater.getContainerItem()));
+						inventory.set(6, new ItemStack(FurnitureItems.itemSoapyWater.getContainerItem()));
 						timeRemaining = 5000;
 					}
-					else if (inventory.get(4).getItem() == FurnitureItems.itemSuperSoapyWater)
+					else if (inventory.get(6).getItem() == FurnitureItems.itemSuperSoapyWater)
 					{
 						this.superMode = true;
-						inventory.set(4, new ItemStack(FurnitureItems.itemSuperSoapyWater.getContainerItem()));
+						inventory.set(6, new ItemStack(FurnitureItems.itemSuperSoapyWater.getContainerItem()));
 						timeRemaining = 5000;
 					}
 				}

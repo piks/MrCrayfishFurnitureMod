@@ -2,12 +2,12 @@
   "modListVersion": 2,
   "modList": [{
     "modid": "cfm",
-    "name": "MrCrayfish's Furniture Mod",
-    "description": "Adds over 50 unique pieces of furniture to the game!",
+    "name": "MrCrayfish's Furniture Mod(PikaPichuPi\'s branch)",
+    "description": "",
     "version": "4.1.2",
     "mcversion": "1.11.2",
-    "url": "https://mrcrayfish.com/mods?id=cfm",
+    "url": "https://github.com/piks/MrCrayfishFurnitureMod",
     "updateUrl": "",
-    "authorList": [ "MrCrayfish" ]
+    "authorList": [ "MrCrayfish", "PikaPichuPi" ]
   }]
 }

@@ -61,7 +61,7 @@ public class TileEntityShowerHead extends TileEntity implements ITickable
 	
 					for (int i = 0; i < 4; i++)
 					{
-						ItemStack itemstack = player.inventory.armorItemInSlot(i);
+						ItemStack itemstack = player.inventory.armorInventory.get(i);
 						if (itemstack != null)
 						{
 							if (itemstack.getItem() instanceof ItemArmor)

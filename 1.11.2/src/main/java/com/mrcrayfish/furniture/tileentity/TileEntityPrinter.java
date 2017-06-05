@@ -94,7 +94,7 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
     	
         boolean flag1 = false;
 
-        if (this.isPrinting())
+        if (this.isPrinting() && this.canPrint())
         {
             --this.printerPrintTime;
         }

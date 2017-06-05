@@ -93,9 +93,9 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
     	boolean flag = this.printingTime > 0;
     	
         boolean flag1 = false;
-
         if (this.isPrinting() && this.canPrint())
         {
+        	//make printerTime use the entire cost
             --this.printerPrintTime;
         }
 
@@ -139,6 +139,7 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
 
                 if (this.printingTime == this.totalCookTime)
                 {
+                	--this.printerPrintTime;
                     this.printingTime = 0;
                     this.printItem();
                     flag1 = true;

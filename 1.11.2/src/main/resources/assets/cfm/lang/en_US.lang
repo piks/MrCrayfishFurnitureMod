@@ -5,6 +5,7 @@ item.item_hammer.name=Hammer
 item.item_envelope.name=Envelope
 item.item_package.name=Package
 item.item_ink_cartridge.name=Ink Cartridge
+item.item_super_ink_cartridge.name=Super Ink Cartridge
 item.item_flesh.name=Flesh
 item.item_flesh_cooked.name=Cooked Flesh
 item.item_cool_pack.name=Cooling Pack

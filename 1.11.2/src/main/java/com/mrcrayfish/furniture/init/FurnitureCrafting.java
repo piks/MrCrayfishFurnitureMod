@@ -91,6 +91,7 @@ public class FurnitureCrafting
 		GameRegistry.addRecipe(new ItemStack(FurnitureBlocks.stereo, 1), " * ", "NJN", '*', Items.IRON_INGOT, 'N', Blocks.NOTEBLOCK, 'J', Blocks.JUKEBOX);
 		GameRegistry.addRecipe(new ItemStack(FurnitureBlocks.ceiling_light_off, 4), "O", "S", "G", 'O', Blocks.OBSIDIAN, 'S', Blocks.STONE, 'G', Blocks.GLOWSTONE);
 		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemInkCartridge, 2), "SSS", "SIS", "SSS", 'I', new ItemStack(Items.DYE, 1, 0), 'S', Blocks.STONE);
+		GameRegistry.addRecipe(new ItemStack(FurnitureItems.itemSuperInkCartridge, 1), "SSS", "III", "SSS", 'I', new ItemStack(FurnitureItems.itemInkCartridge, 1, 0), 'S', Blocks.STONE);
 		GameRegistry.addRecipe(new ItemStack(FurnitureBlocks.tree_bottom, 1), " L ", "LLL", " P ", 'L', Blocks.LEAVES, 'P', Items.FLOWER_POT);
 		GameRegistry.addRecipe(new ItemStack(FurnitureBlocks.present, 4, 0), "WWW", "WPW", "WWW", 'W', new ItemStack(Blocks.WOOL, 1, 15), 'P', FurnitureItems.itemPackage);
 		GameRegistry.addRecipe(new ItemStack(FurnitureBlocks.present, 4, 1), "WWW", "WPW", "WWW", 'W', new ItemStack(Blocks.WOOL, 1, 11), 'P', FurnitureItems.itemPackage);

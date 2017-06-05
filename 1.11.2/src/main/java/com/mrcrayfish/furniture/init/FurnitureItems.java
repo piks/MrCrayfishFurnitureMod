@@ -50,7 +50,7 @@ public class FurnitureItems
 
 	/** Electronic Update */
 	public static Item itemInkCartridge;
-
+	public static Item itemSuperInkCartridge;
 	/** Bathroom Update */
 
 	/** Kitchen Update */
@@ -73,6 +73,7 @@ public class FurnitureItems
 	{
 		itemCoolPack = new ItemGeneric().setUnlocalizedName("item_cool_pack").setRegistryName("item_cool_pack");
 		itemInkCartridge = new ItemGeneric().setUnlocalizedName("item_ink_cartridge").setRegistryName("item_ink_cartridge");
+		itemSuperInkCartridge = new ItemGeneric().setUnlocalizedName("item_super_ink_cartridge").setRegistryName("item_super_ink_cartridge");
 		itemFlesh = new ItemFood(1, 2, false).setUnlocalizedName("item_flesh").setRegistryName("item_flesh").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
 		itemCookedFlesh = new ItemFood(4, 4, false).setUnlocalizedName("item_flesh_cooked").setRegistryName("item_flesh_cooked").setCreativeTab(MrCrayfishFurnitureMod.tabFurniture);
 		itemEnvelope = new ItemEnvelope().setUnlocalizedName("item_envelope").setRegistryName("item_envelope");
@@ -110,6 +111,7 @@ public class FurnitureItems
 		GameRegistry.register(itemPackage);
 		GameRegistry.register(itemPackageSigned);
 		GameRegistry.register(itemInkCartridge);
+		GameRegistry.register(itemSuperInkCartridge);
 		GameRegistry.register(itemBreadSlice);
 		GameRegistry.register(itemToast);
 		GameRegistry.register(itemKnife);
@@ -140,6 +142,7 @@ public class FurnitureItems
 		registerRender(itemPackage);
 		registerRender(itemPackageSigned);
 		registerRender(itemInkCartridge);
+		registerRender(itemSuperInkCartridge);
 		registerRender(itemBreadSlice);
 		registerRender(itemToast);
 		registerRender(itemKnife);

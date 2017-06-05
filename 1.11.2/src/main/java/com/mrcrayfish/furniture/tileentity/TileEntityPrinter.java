@@ -208,6 +208,8 @@ public class TileEntityPrinter extends TileEntityFurniture implements ISidedInve
 				return 1000;
 			if (i == FurnitureItems.itemInkCartridge)
 				return 5000;
+			if (i == FurnitureItems.itemSuperInkCartridge)
+				return 15000;
 		}
 		return 0;
     }

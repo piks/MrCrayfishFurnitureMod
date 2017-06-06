@@ -100,7 +100,7 @@ public class BlockFireAlarm extends BlockFurniture
 						{
 							if (world.getBlockState(pos.add(-4 + x, -4 + y, -4 + z)).getBlock() == Blocks.FIRE)
 							{
-								world.playSound(pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, FurnitureSounds.fire_alarm, SoundCategory.BLOCKS, 5.0F, 1.0F, false);
+								world.playSound((EntityPlayer)null,pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, FurnitureSounds.fire_alarm, SoundCategory.BLOCKS, 5.0F, 1.0F);
 								world.setBlockState(pos, FurnitureBlocks.fire_alarm_on.getDefaultState(), 2);
 								break scanner;
 							}
@@ -116,7 +116,7 @@ public class BlockFireAlarm extends BlockFurniture
 		}
 		if (on)
 		{
-			world.playSound(pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, FurnitureSounds.fire_alarm, SoundCategory.BLOCKS, 5.0F, 1.0F, false);
+			world.playSound((EntityPlayer)null,pos.getX() + 0.5, pos.getY() + 1.0, pos.getZ() + 0.5, FurnitureSounds.fire_alarm, SoundCategory.BLOCKS, 5.0F, 1.0F);
 			world.scheduleUpdate(pos, this, 34);
 		}
 	}

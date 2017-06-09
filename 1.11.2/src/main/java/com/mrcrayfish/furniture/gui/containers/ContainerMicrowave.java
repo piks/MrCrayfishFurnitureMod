@@ -95,7 +95,7 @@ public class ContainerMicrowave extends Container
 				slot.onSlotChanged();
 			}
 		}
-		return null;
+		return itemCopy;
 	}
 	
 	@Override
